@@ -1,0 +1,123 @@
+:root {
+    --primary-color: #92B187; /* Deep Blue */
+    --secondary-color: #A3ACA5; /* Warm Orange */
+    --background-color: #F3F4F6; /* Light Gray */
+    --text-color: #1F2937; /* Dark Gray */
+    --border-color: #88aee6; /* Medium Gray */
+    --accent-color: #DBDDD6; /* Teal Green */
+    --highlight-color: #EF4444; /* Bright Red */
+    --font-primary: 'Roboto', sans-serif;
+    --font-secondary: 'Quantico', serif;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between links */
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-secondary);
+    color: var(--primary-color);
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Step 3: Remove underlines from social media image links */
+a img {
+    text-decoration: none;
+    border: none;
+}
+
+/* Step 4: Hero Container Styling */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales properly */
+}
+
+.hero h1 {
+    position: absolute;
+    top: -50px; /* Ajusta el valor según lo que necesites */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    margin-top: 60px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 60%;
+    text-align: justify;
+}
+
+.hero article img {
+    float: right;
+    width: 80px; /* Ajusta el tamaño */
+    height: auto;
+    border-radius: 50%; /* Imagen redonda */
+    margin-left: 15px; /* Espaciado para que no toque el texto */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+section img {
+    width: 100%; /* Makes all images the same width */
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Adds spacing */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sociallinks a img {
+    width: 30px;
+    height: auto;
+}

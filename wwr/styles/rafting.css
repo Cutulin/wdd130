@@ -10,19 +10,44 @@
     --font-secondary: 'Quantico', serif;
 }
 
+header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    background-color: #D6C2F0; /* Color de fondo */
+    padding: 10px 20px;
+}
+
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--background-color);
+}
+
+.history img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+}
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* Adds spacing between links */
+    justify-content: flex-end;
+    gap: 20px;
 }
 
-body {
-    font-family: var(--font-primary);
-    background-color: var(--background-color);
-    color: var(--text-color);
-    max-width: 1200px;
-    margin: 0 auto;
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--highlight-color); /* Resalta al pasar el cursor */
 }
 
 h1, h2, h3 {
@@ -40,6 +65,78 @@ p {
 a img {
     text-decoration: none;
     border: none;
+}
+
+section img {
+    width: 100%; /* Makes all images the same width */
+    max-width: 250px;
+    height: auto;
+    border-radius: 8px;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Adds spacing */
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
+}
+
+footer img {
+    width: 30px;
+    margin-left: 10px;
+}
+
+.sociallinks {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.sociallinks a img {
+    width: 30px;
+    height: auto;
+}
+
+.adventure {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    text-align: center;
+    padding: 20px;
+}
+
+.adventure figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.adventure img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+body {
+    font-family: var(--font-primary);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Step 4: Hero Container Styling */
@@ -91,34 +188,4 @@ a img {
     border-radius: 50%; /* Imagen redonda */
     margin-left: 15px; /* Espaciado para que no toque el texto */
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra sutil */
-}
-
-section img {
-    width: 100%; /* Makes all images the same width */
-    max-width: 250px;
-    height: auto;
-    border-radius: 8px;
-}
-
-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px; /* Adds spacing */
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-}
-
-.sociallinks {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-}
-
-.sociallinks a img {
-    width: 30px;
-    height: auto;
 }
